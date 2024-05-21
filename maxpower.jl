@@ -3,6 +3,7 @@ using LinearAlgebra
 include("maxplus.jl")
 
 # Max-Power function using classic algebra multiplication
+# fails!!!
 function max_power_normal_mult(C::Matrix, r::Vector)
     n = length(r)
     p = 1
@@ -107,7 +108,7 @@ function max_power(C::Matrix)
     return max_power(C, r)
 end
 
-
+# Power Method for a matrix - not its transposition
 function max_power_not_transposed(C::Matrix, r::Vector)
     n = length(r)
     p = 1
